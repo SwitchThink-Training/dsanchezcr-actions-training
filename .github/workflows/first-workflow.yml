@@ -61,6 +61,8 @@ permissions:
 jobs:
   job_1:
     runs-on: ubuntu-latest
+    environment:
+      test
     
     steps:
       - run: echo "🎉 The job was triggered by a ${{ github['event_name'] }} event."
